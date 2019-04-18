@@ -1,0 +1,14 @@
+- name: set aliases
+  blockinfile:
+    dest: /etc/bashrc
+    marker: "# {mark} YSETUP ALIASES SET" 
+    insertafter: "# BEGIN YSETUP ALIASES SET"
+    block: 
+      "{{ item }}"
+  with_items:
+    - "{{ aliases }}"
+
+- name: source bashrc
+  shell: source /etc/bashrc
+  args:
+     executable: /bin/bash

@@ -1,0 +1,25 @@
+aliases: |-
+  {{ '#' }} la で ls -la
+  alias la='ls -la'
+
+  {{ '#' }} cd .. を省力化
+  alias ..='cd ..'
+  alias ..2='cd ../..'
+  alias ..3='cd ../../..'
+  alias cd..='cd ..'
+
+  {{ '#' }} cd 成功時に自動的に ls 
+  function cdl() {
+    \cd "$@" && ls
+  }
+  alias cd='cdl'
+
+  {{ '#' }} mkdir して cd
+  function mkdirc(){
+    mkdir -p "$@" && \cd "$@"
+  }
+
+  alias hs='history | grep'
+  alias a='ansible-playbook'
+  alias al='ansible-playbook -i localhost, -c local'
+  alias vi='vim'

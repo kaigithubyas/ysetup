@@ -1,0 +1,5 @@
+packages:
+  - epel-release
+  - ansible
+  - git
+  - vim

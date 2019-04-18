@@ -1,0 +1,22 @@
+- name: git clone molokai
+  git:
+    repo: 'https://github.com/tomasr/molokai.git'
+    dest: "{{ item }}"
+  with_items:
+    - /root/.vim
+    - /home/vagrant/.vim
+
+- name: make config file "/etc/vimrc"
+  template:
+    src: vimrc.j2
+    dest: /etc/vimrc
+
+- name: export TERM=xterm-256color
+  lineinfile:
+    dest: /etc/bashrc
+    line: 'export TERM=xterm-256color'
+
+- name: source bashrc
+  shell: source /etc/bashrc
+  args:
+     executable: /bin/bash

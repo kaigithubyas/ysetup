@@ -1,0 +1,4 @@
+[mongodb]
+172.30.254.220 ansible_ssh_user=vagrant
+172.30.254.214 ansible_ssh_user=vagrant
+172.30.254.216 ansible_ssh_user=vagrant
