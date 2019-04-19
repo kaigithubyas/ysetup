@@ -20,11 +20,11 @@ git
 vim
 
 
-##エイリアス設定
+## エイリアス設定
 
-・入力の省力化に便利なエイリアス一式を設定します。/etc/bashrc の末尾に書き込まれるため、この変更は全ユーザに適用されます。
+入力の省力化に便利なエイリアス一式を設定します。/etc/bashrc の末尾に書き込まれるため、この変更は全ユーザに適用されます。
 
-cd .. を省力化、 typo 対策
+・cd .. を省力化、 typo 対策
 
 alias ..='cd ..'
 
@@ -65,6 +65,8 @@ alias al='ansible-playbook -i localhost, -c local'
 
 alias vi='vim'
 
+
+## vim
 
 ・vim のカラーテーマを molokai に変更
 
