@@ -115,6 +115,7 @@ $ cd ysetup
 $ ansible-playbook -i localhost, -c local ysetup.yml
 
 エイリアスだけほしい場合
+
 $ ansible-playbook -i localhost, -c local aliases.yml
 
 別の仮想マシンに適用したい場合は hosts ファイルを編集の上、以下のコマンドを実行。
