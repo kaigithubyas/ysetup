@@ -100,8 +100,7 @@ EXPORT TERM=xterm-256color
 
 ## 使い方
 
-1. playbook をリモートリポジトリから pull する。（このページからダウンロードする、と読み替えて差し支えないです。）
-　カレントディレクトリに ysetup ディレクトリが作られます。
+1. playbook をリモートリポジトリから pull する。（このページからダウンロードする、と読み替えて差し支えないです。）カレントディレクトリに ysetup ディレクトリが作られます。
  
 $ git clone https://github.com/kaigithubyas/ysetup
 
